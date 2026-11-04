@@ -16,7 +16,7 @@ pipeline{
 
         stage('produccion'){
             steps{
-                echo 'ejecutando en produccion'
+                echo 'ejecutando en produccion.'
             }
         }
     }
