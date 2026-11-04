@@ -1,3 +1,25 @@
 pipeline{
-    
+    agent any
+
+    stages{
+        stage('inicio'){
+            steps{
+                echo 'iniciando prueba'
+            }
+        }
+
+        stage('prueba'){
+            steps{
+                sh 'echo "se inicia las pruebas de codigo"'
+            }
+        }
+
+        stage('produccion'){
+            steps{
+                echo 'ejecutando en produccion'
+            }
+        }
+    }
 }
+
+nuevo cambios
